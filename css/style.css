@@ -1,0 +1,31 @@
+.grid{
+	display: grid;
+	grid-row-gap: 5px;
+	grid-column-gap: 5px;
+	grid-template-columns: 1fr;
+ }
+
+
+@media screen and (min-width: 776px){
+	.grid{
+		grid-template-columns: 1fr 1fr;
+ 	}
+
+ 	/*.item1{
+ 		grid-column: 1 / -1
+ 	}*/
+
+}
+@media screen and (min-width: 1120px){
+	.grid{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	/*.item3{
+		grid-row: 1/4;
+		grid-column: 1/2;
+	}*/
+
+	/*.item1{
+		grid-row: 1 / 2;
+	}*/
+}
