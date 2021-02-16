@@ -8,24 +8,24 @@
 
 @media screen and (min-width: 776px){
 	.grid{
-		grid-template-columns: 1fr 1fr;
+		
  	}
 
- 	/*.item1{
- 		grid-column: 1 / -1
- 	}*/
+ 	/* .item1{
+ 		 Span the entire row 
+ 	}
+	*/
 
 }
 @media screen and (min-width: 1120px){
 	.grid{
-		grid-template-columns: 1fr 1fr 1fr;
+		
 	}
 	/*.item3{
-		grid-row: 1/4;
-		grid-column: 1/2;
+		Span 3 rows and one column
 	}*/
 
 	/*.item1{
-		grid-row: 1 / 2;
+		Keep on the first row
 	}*/
 }
