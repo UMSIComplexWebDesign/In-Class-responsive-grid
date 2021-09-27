@@ -68,8 +68,7 @@
 	.item3{
 		/* Start in row 2 and span two rows 
 		   Start in column 2 and span two columns */
-		grid-column: 2 /span 2; 
-		grid-row: 2 / span 2;
+
 
 		/* What happens if you try to span 3 columns */
 	}
