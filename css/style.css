@@ -1,31 +1,78 @@
+.grid > div{
+	max-height:40px;
+}
+
 .grid{
 	display: grid;
 	grid-row-gap: 5px;
 	grid-column-gap: 5px;
-	grid-template-columns: 1fr;
+	grid-template-columns: 500px;
+
+	/* Play with: */
+	/* justify-content:; */
+	/* justify-items:;  */
+	/* align-items:; */
+	/* align-content:; */
  }
+
+ 
 
 
 @media screen and (min-width: 776px){
+
+	body{
+		background-color: yellow;
+	}
+
+	.grid > div{
+		max-height:none;
+	}
+
+	/* Make this a two column grid. */
 	.grid{
+
+
+		
+		/* Play with: */
+		/* justify-content:; */
+		/* justify-items:;  */
+
+		/* Why don't we bother with align here? */
+
 		
  	}
 
- 	/* .item1{
- 		 Span the entire row 
+ 	.item1{
+ 		 /* Span the entire first row  */
+		
+		  /* grid-column: ; */
  	}
-	*/
+	
+	.item2{
+		/* Start in row 2 and span 3 rows */
+		/* grid-row:; */
+
+	}
 
 }
 @media screen and (min-width: 1120px){
-	.grid{
-		
+	body{
+		background-color: green;
 	}
-	/*.item3{
-		Span 3 rows and one column
-	}*/
 
-	/*.item1{
-		Keep on the first row
-	}*/
+	/* Make this a three column grid using fr. */
+	.grid{
+
+		/* Why don't we bother with justify here? */
+	}
+	.item3{
+		/* Start in row 2 and span two rows 
+		   Start in column 2 and span two columns */
+		grid-column: 2 /span 2; 
+		grid-row: 2 / span 2;
+
+		/* What happens if you try to span 3 columns */
+	}
+
+	
 }
