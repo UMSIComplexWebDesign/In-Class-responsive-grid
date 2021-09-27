@@ -1,0 +1,22 @@
+@media (orientation: portrait) {
+  .grid {
+    justify-content: center;
+  }
+
+  body{
+    border:2px solid black;
+    margin: 50px 0;
+  }
+}
+
+@media (orientation: landscape) {
+    .grid {
+      border:2px solid black;
+      justify-content: space-around;
+    }
+
+    body{
+      border:2px solid black;
+      margin: 0 50px;
+    }
+  }
